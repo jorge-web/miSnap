@@ -89,6 +89,17 @@ h2 {
 .helpText h4 {
     margin-bottom: 10px;
 }
+.helpText h5 {
+    margin-top: 22px;
+    font-size: 12px;
+}
+.extract {
+    width: 600px;
+    height: 70px;
+    clear: both;
+    text-align: center;
+}
+
 
 /**/
 
