@@ -178,7 +178,7 @@
 <div class="text-center">
 
     <div class="helpText">
-        <h5><b>Take a picture of the Front and Back of your license. Make sure to:</b></h5>
+        <h4><b>Take a picture of the Front and Back of your license. Make sure to:</b></h4>
         <ul>
             <li>Watch for glare</li>
             <li>Use a dark background</li>
@@ -190,7 +190,8 @@
 
         <div class="column-1">
             <div class="img-container">
-                <img src="../images/document.jpg" width="200px"/>
+                <br/>
+                <img src="../images/dl_front_blue.png" width="200px"/>
             </div>
             <button id="frontCaptureButton" class="btn btn-default" onclick="captureFrontImage()">
                 <img id="frontSuccess" class="resultImage" style="display: none" src="../images/green_check.png"/>
@@ -207,7 +208,8 @@
         
         <div class="column-2">
             <div class="img-container">
-                <img src="../images/document.jpg" width="200px"/>  
+                <br/>
+                <img src="../images/dl_back_blue.png" width="200px"/>  
             </div>  
             <button id="backCaptureButton" class="btn btn-default" onclick="captureBackImage()">
                 <img id="backSuccess" class="resultImage" style="display: none" src="../images/green_check.png"/>
@@ -221,8 +223,9 @@
         </div>
 
         
-
-        <button id="extractDataButton" class="btn btn-primary" onclick="extractData()">Send</button>
+        <div class="extract">
+            <button id="extractDataButton" class="btn btn-primary" onclick="extractData()">Send</button>
+        </div>
 
     </div>
 
