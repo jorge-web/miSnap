@@ -134,7 +134,7 @@
                     'Content-Type': 'application/json'
                 }
                 }).then(res => {
-                    res.status == 200 && window.close()
+                    res.status == 200 || res.status == 204 && window.close()
                 })
                 .catch(error => {alert("something was wrong please try again"); console.error('Error:', error)})
                 .then(response => console.log('Success:', response));
