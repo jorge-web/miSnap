@@ -27,7 +27,6 @@
 
     function captureImage(e) {
         MitekMobileWeb.captureAndProcessImage(captureCallback, 'Passport');
-        e.target.blur();
     }
 
     function captureCallback(passportCaptureResult) {
@@ -65,7 +64,7 @@
         console.log("captureResult", captureResult);
         const uuid = window.location.search.split("=")[1];
         const data = {image:captureResult.finalImage, uuid:uuid.slice(0,(uuid.length - 9))};
-        const url = "https://taxchatapid.ey.com/v3/experian/"+data.uuid+"/check"
+        const url = "https://taxchatapiq.ey.com/v3/experian/"+data.uuid+"/check"
         const obj = {}
         
         if (captureResult == null) {
@@ -114,11 +113,6 @@
     $(window).resize(function(){
         window.resizeTo(660,390);
     });
-
-    $(window).blur(function(e) {
-        
-        //document.activeElement.tagName !== "BUTTON" && window.close();
-    })
 
 </script>
 

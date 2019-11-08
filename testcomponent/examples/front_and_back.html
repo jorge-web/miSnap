@@ -117,7 +117,7 @@
         console.log("captureResult", CaptureResult);
         const uuid = window.location.search.split("=")[1];
         const data = {image:CaptureResult.finalImage, uuid:uuid};
-        const url = "https://taxchatapid.ey.com/v3/experian/"+data.uuid+"/check"
+        const url = "https://taxchatapiq.ey.com/v3/experian/"+data.uuid+"/check"
         const obj = {};
 
         // the user must either capture the Front and select the Issue State or capture the Back (or both)
