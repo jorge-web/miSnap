@@ -64,7 +64,7 @@
         console.log("captureResult", captureResult);
         const uuid = window.location.search.split("=")[1];
         const data = {image:captureResult.finalImage, uuid:uuid.slice(0,(uuid.length - 9))};
-        const url = "https://taxchatapiq.ey.com/v3/experian/"+data.uuid+"/check"
+        const url = "https://taxchatapid.ey.com/v3/experian/"+data.uuid+"/check"
         const obj = {}
         
         if (captureResult == null) {
